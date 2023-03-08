@@ -12,7 +12,10 @@ const MarkDown = () =>{
         <div>
         <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
         <ReactMarkdown># Hello, *world*! This is a MarkDown Editor.</ReactMarkdown>
-        <textarea style={{width:"400px" , height:"500px", float:"left", marginLeft:"10%"}} type="text" onChange={e => setMarkDown(e.target.value)}/>
+        <textarea 
+        style={{width:"400px" , height:"500px", float:"left", marginLeft:"10%"}}
+        type="text" onChange={e => setMarkDown(e.target.value)}
+        />
         <ReactMarkdown style={{float:"right"}} remarkPlugins={[remarkGfm]}>{markDown}</ReactMarkdown>
         </div>
         

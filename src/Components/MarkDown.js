@@ -5,7 +5,7 @@ import remarkGfm from 'remark-gfm'
 
 const MarkDown = () =>{
 
-    const markdown = `Just a link: https://reactjs.com.`
+    const markdown = `Just a link: https://www.markdownguide.org/cheat-sheet.`
     const [markDown, setMarkDown] = useState("");
 
     return(
